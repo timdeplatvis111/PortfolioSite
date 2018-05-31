@@ -37,7 +37,7 @@ html,body
 
 .css-typing p 
 {
-    border-right: .12em solid orange;
+    border-right: .12em solid white;
     font-family: "Courier";
     font-size: 28px;
     white-space: nowrap;
@@ -60,7 +60,7 @@ html,body
 
 .css-typing2 p 
 {
-    border-right: .12em solid orange;
+    border-right: .12em solid white;
     font-family: "Courier";
     font-size: 28px;
     white-space: nowrap;
@@ -129,7 +129,7 @@ html,body
     width: 0;
   }
   99.9% {
-    border-right: .15em solid orange;
+    border-right: .15em solid white;
   }
   100% {
     border: none;
@@ -141,7 +141,7 @@ html,body
     width: 0;
   }
   99.9% {
-    border-right: .15em solid orange;
+    border-right: .15em solid white;
   }
   100% {
     border: none;
@@ -156,7 +156,7 @@ html,body
     opacity: 1;
   }
   99.9% {
-    border-right: .15em solid orange;
+    border-right: .15em solid white;
   }
   100% {
     opacity: 1;
@@ -172,7 +172,7 @@ html,body
     opacity: 1;
   }
   99.9% {
-    border-right: .15em solid orange;
+    border-right: .15em solid white;
   }
   100% {
     opacity: 1;

@@ -13,15 +13,20 @@
     <link rel="stylesheet" href="css/hey.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/blok1.css" type="text/css">
+    <link rel="stylesheet" href="css/codeStyle.css" type="text/css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/blok2.css">
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
     
 <body onload="splash(50000)">
     
+    <!-- package scrips -->
     <script type="text/javascript" src="css/jquery-3.2.1.min.js"> </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js">
-    </script>
+    <script type="text/javascript" src="css/jquery.scrollify.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
 <!-- count particles 
 <div class="count-particles">
@@ -29,37 +34,151 @@
 </div>
 
 <!-- particles.js container -->
-<div id="particles-js">
-    <div id="splash"><img src="images/LoadingLogo.svg" /></div>
+<section class="particles-js" data-section-name="particles-js">
+    <div id="particles-js">
+        <div id="splash"><img src="images/LoadingLogo.svg" /></div>
     
-    <div style="display: none;" class="css-typing">
-        <p class=hvr-grow> Hello I'm Tim</p>
+        <div style="display: none;" class="css-typing">
+            <p class=hvr-grow> Hello I'm Tim</p>
         
-        <p class="hvr-shrink"> I'm a student</p>
+            <p class="hvr-shrink"> I'm a student</p>
         
-        <p class="hvr-skew"> I'm currently studying software development at Nova college in Haarlem</p>
+            <p class="hvr-skew"> I'm currently studying software development at Nova college in Haarlem</p>
+        </div>
+    
+        <div style="display: none;" class="css-typing2">
+            <p> Please scroll down to proceed </p>
+        </div>
     </div>
+</section>
     
-    <div style="display: none;" class="css-typing2">
-        <p> Please scroll down to proceed </p>
+<section class="blok1" data-section-name="blok1">
+    <div id="Blok1">
+        <div id="Blok1-container">
+            <div id="Blok1-container-spacer1"> </div>
+            <div id="css-typing-blok1">
+                <p> I'm mostly intrested in learning about web development</p>
+                
+
+                <p> I am currently aiming to learn at least 2 web development languages. These will most likely be PHP and Django</p>
+                
+                <div id="Blok1-container-spacer3"> </div>
+                
+                <div id="Blok1-container-code">
+                    <pre><code class="python">
+print('Hello, world!')
+                    </code></pre>
+                
+                    <pre><code class="csharp"> 
+using System;
+namespace HelloWorld
+{
+    class Hello 
+    {
+        static void Main() 
+        {
+            Console.WriteLine("Hello World!");
+
+            // Keep the console window open in debug mode.
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
+        }
+    }
+}
+                    </code></pre>
+                
+                    <pre><code class="ruby"> 
+class HelloWorld
+   def initialize(name)
+      @name = name.capitalize
+   end
+   def sayHi
+      puts "Hello #{@name}!"
+   end
+end
+
+hello = HelloWorld.new("World")
+hello.sayHi
+                    </code></pre>
+                </div>
+                
+            </div>
+            
+            <div id="Blok1-container-spacer1"> </div>
+            
+            <!-- Fade in 2 images van PHP en Django --> 
+            
+            <div id="Blok1-container-images">
+                <img src="http://php.net/images/logos/new-php-logo.svg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Django_logo.svg/1200px-Django_logo.svg.png">
+                
+            </div>
+            <div id="Blok1-container-spacer2"> </div>
+            <div id="css-typing-blok2">
+                <p> the next page you'll be able to see some of my projects, of which most are in early development </p>
+            </div>
+        </div>
     </div>
-</div>
+</section>
     
-<div id="Blok1">
+<section class="blok2" data-section-name="blok2">
+    <div id="blok2">
+        <div id="blok2-container">
     
-</div>
+    
+        </div>
+    </div>
+</section>
 
 <!-- scripts -->
 <script src="css/particles.js-master/particles.js"></script>
 <script src="js/app.js"></script>
 
     <script>
-        
+    
+    /* Fade in en fade uit van de begin tekst/loading screen */
     $('#splash').delay(2000).fadeOut(100);
     $(".css-typing").delay(2000).fadeIn(500);
     $(".css-typing2").delay(8000).fadeIn(500);
+        
+    /* Scrollify functions */
+    $(function() 
+    {
+    $.scrollify
+    (
+    {
+    section : "section",
+    sectionName : "section-name",
+    interstitialSection : "",
+    easing: "easeOutExpo",
+    scrollSpeed: 1100,
+    offset : 0,
+    scrollbars: true,
+    standardScrollElements: "",
+    setHeights: true,
+    overflowScroll: true,
+    updateHash: true,
+    touchScroll:true,
+    before:function() {},
+    after:function() {},
+    afterResize:function() {},
+    afterRender:function() {}
+    });
+    });
+        
+    $(window).scroll(function() 
+    {
+    var height = $(window).scrollTop();
+
+    if(height > 650) 
+    {
+        $('#Blok1-container-images').fadeIn(800);
+    }
+    });
 
     </script>
+    
+    <script>hljs.initHighlightingOnLoad();</script>
     
 </body>
 </html>

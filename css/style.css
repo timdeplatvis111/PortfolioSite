@@ -30,7 +30,8 @@ html,body{
 	background:#111;
 }
 
-html{
+html
+{
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
