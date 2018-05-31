@@ -1,0 +1,288 @@
+* 
+{
+    margin:0;
+    padding: 0;	
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+}
+
+#splash img
+{
+    width: 100%;
+    top: 25%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    position: absolute;
+}
+
+.css-typing
+{
+    width: 50%;
+    height: 55%;
+    z-index: 999;
+    top: 25%;
+    bottom: 25%;
+    left: 25%;
+    right: 25%;
+    position: absolute;
+}
+
+.css-typing p 
+{
+    border-right: .12em solid orange;
+    font-family: "Courier";
+    font-size: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 500;
+    color: white;
+}
+
+.css-typing2
+{
+    width: 25%;
+    height: 25%;
+    top: 75%;
+    bottom: 25%;
+    left: 35%;
+    right: 25%;
+    position: absolute;
+    text-align: center;
+}
+
+.css-typing2 p 
+{
+    border-right: .12em solid orange;
+    font-family: "Courier";
+    font-size: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 500;
+    color: white;
+}
+
+.css-typing2 p:nth-child(1) 
+{
+    width: 18em;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type 2s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(1) 
+{
+    width: 8em;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type 2s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(2) 
+{
+    width: 8em;
+    opacity: 0;
+    -webkit-animation: type2 2s steps(40, end);
+    animation: type2 2s steps(40, end);
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(3) 
+{
+    width: 42em;
+    opacity: 0;
+    -webkit-animation: type3 2s steps(40, end);
+    animation: type3 2s steps(40, end), blink .5s step-end    infinite alternate;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(5) 
+{
+    width: 17.5em;
+    opacity: 0;
+    -webkit-animation: type2 2s steps(40, end);
+    animation: type2 2s steps(40, end);
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes type 
+{
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+
+.hvr-grow 
+{
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active 
+{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.hvr-shrink
+{
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.hvr-skew 
+{
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-skew:hover, .hvr-skew:focus, .hvr-skew:active 
+{
+  -webkit-transform: skew(-10deg);
+  transform: skew(-10deg);
+}
+
+/* Voor small phones */
+
+@media screen and (max-width: 370px) and (min-width: 320px) 
+{
+
+}
+
+/* Werkt voor Galaxy s5 en medium phones */
+@media screen and (max-width: 380px) and (min-width: 330px) 
+{
+
+}
+
+/* Voor large phones zoals voor 425 pixels width */
+
+@media screen and (max-width: 500px) and (min-width: 400px) 
+{
+
+}

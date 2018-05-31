@@ -1,0 +1,103 @@
+<svg class="ldt-blank" width="723px"  height="100px"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" style="background: none;"><style type="text/css">path,ellipse,circle,rect,polygon,polyline,line { stroke-width: 0; }
+@keyframes ld-blink {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes ld-blink {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.ld.ld-blink {
+  -webkit-animation: ld-blink 1s infinite linear;
+  animation: ld-blink 1s infinite linear;
+}
+
+text { font-family: Arial }</style><g transform="translate(180.178125 65.9)" style="opacity: 1;">
+  <g style="animation-delay: 0s; animation-duration: 1s; font-size: 48px; animation-direction: normal; transform-origin: 13.3438px 0px 0px;" class="ld ld-blink">
+    <text fill="#0055a5" style="font-family:Arial">L</text>
+  </g>
+</g><g transform="translate(206.865625 65.9)" style="opacity: 1;">
+  <g style="animation-delay: -0.0588235s; animation-duration: 1s; font-size: 48px; animation-direction: normal; transform-origin: 13.3438px 0px 0px;" class="ld ld-blink">
+    <text fill="#45aee7" style="font-family:Arial">o</text>
+  </g>
+</g><g transform="translate(233.553125 65.9)" style="opacity: 1;">
+  <g style="animation-delay: -0.117647s; animation-duration: 1s; font-size: 48px; animation-direction: normal; transform-origin: 13.3438px 0px 0px;" class="ld ld-blink">
+    <text fill="#bda0b2" style="font-family:Arial">a</text>
+  </g>
+</g><g transform="translate(260.240625 65.9)" style="opacity: 1;">
+  <g style="animation-delay: -0.176471s; animation-duration: 1s; font-size: 48px; animation-direction: normal; transform-origin: 13.3438px 0px 0px;" class="ld ld-blink">
+    <text fill="#ce64a6" style="font-family:Arial">d</text>
+  </g>
+</g><g transform="translate(286.928125 65.9)" style="opacity: 1;">
+  <g style="animation-delay: -0.235294s; animation-duration: 1s; font-size: 48px; animation-direction: normal; transform-origin: 5.32813px 0px 0px;" class="ld ld-blink">
+    <text fill="#d8f05b" style="font-family:Arial">i</text>
+  </g>
+</g><g transform="translate(297.584375 65.9)" style="opacity: 1;">
+  <g style="animation-delay: -0.294118s; animation-duration: 1s; font-size: 48px; animation-direction: normal; transform-origin: 13.3438px 0px 0px;" class="ld ld-blink">
+    <text fill="#55ad15" style="font-family:Arial">n</text>
+  </g>
+</g><g transform="translate(324.271875 65.9)" style="opacity: 1;">
+  <g style="animation-delay: -0.352941s; animation-duration: 1s; font-size: 48px; animation-direction: normal; transform-origin: 13.3438px 0px 0px;" class="ld ld-blink">
+    <text fill="#0055a5" style="font-family:Arial">g</text>
+  </g>
+</g><g transform="translate(350.959375 65.9)" style="opacity: 1;">
+  <g style="animation-delay: -0.411765s; animation-duration: 1s; font-size: 48px; animation-direction: normal; transform-origin: 8.4px 0px 0px;" class="ld ld-blink">
+    <text fill="#45aee7" style="font-family:Arial"> </text>
+  </g>
+</g><g transform="translate(367.759375 65.9)" style="opacity: 1;">
+  <g style="animation-delay: -0.470588s; animation-duration: 1s; font-size: 48px; animation-direction: normal; transform-origin: 13.3438px 0px 0px;" class="ld ld-blink">
+    <text fill="#bda0b2" style="font-family:Arial">p</text>
+  </g>
+</g><g transform="translate(394.446875 65.9)" style="opacity: 1;">
+  <g style="animation-delay: -0.529412s; animation-duration: 1s; font-size: 48px; animation-direction: normal; transform-origin: 13.3438px 0px 0px;" class="ld ld-blink">
+    <text fill="#ce64a6" style="font-family:Arial">o</text>
+  </g>
+</g><g transform="translate(421.134375 65.9)" style="opacity: 1;">
+  <g style="animation-delay: -0.588235s; animation-duration: 1s; font-size: 48px; animation-direction: normal; transform-origin: 8.5px 0px 0px;" class="ld ld-blink">
+    <text fill="#d8f05b" style="font-family:Arial">r</text>
+  </g>
+</g><g transform="translate(438.134375 65.9)" style="opacity: 1;">
+  <g style="animation-delay: -0.647059s; animation-duration: 1s; font-size: 48px; animation-direction: normal; transform-origin: 7px 0px 0px;" class="ld ld-blink">
+    <text fill="#55ad15" style="font-family:Arial">t</text>
+  </g>
+</g><g transform="translate(452.134375 65.9)" style="opacity: 1;">
+  <g style="animation-delay: -0.705882s; animation-duration: 1s; font-size: 48px; animation-direction: normal; transform-origin: 8px 0px 0px;" class="ld ld-blink">
+    <text fill="#0055a5" style="font-family:Arial">f</text>
+  </g>
+</g><g transform="translate(468.134375 65.9)" style="opacity: 1;">
+  <g style="animation-delay: -0.764706s; animation-duration: 1s; font-size: 48px; animation-direction: normal; transform-origin: 13.3438px 0px 0px;" class="ld ld-blink">
+    <text fill="#45aee7" style="font-family:Arial">o</text>
+  </g>
+</g><g transform="translate(494.821875 65.9)" style="opacity: 1;">
+  <g style="animation-delay: -0.823529s; animation-duration: 1s; font-size: 48px; animation-direction: normal; transform-origin: 5.32813px 0px 0px;" class="ld ld-blink">
+    <text fill="#bda0b2" style="font-family:Arial">l</text>
+  </g>
+</g><g transform="translate(505.478125 65.9)" style="opacity: 1;">
+  <g style="animation-delay: -0.882353s; animation-duration: 1s; font-size: 48px; animation-direction: normal; transform-origin: 5.32813px 0px 0px;" class="ld ld-blink">
+    <text fill="#ce64a6" style="font-family:Arial">i</text>
+  </g>
+</g><g transform="translate(516.134375 65.9)" style="opacity: 1;">
+  <g style="animation-delay: -0.941176s; animation-duration: 1s; font-size: 48px; animation-direction: normal; transform-origin: 13.3438px 0px 0px;" class="ld ld-blink">
+    <text fill="#d8f05b" style="font-family:Arial">o</text>
+  </g>
+</g></svg>
