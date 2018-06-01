@@ -6,5 +6,92 @@
 
 #Blok2-container
 {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #1D1F21;
+}
+
+#Blok2-container-code-sidebar
+{
+    width: 10%;
+    height: 90%;
+}
+
+#Blok2-container-code-bovenbar
+{
+    width: 100%;
+    height: 5%;
+    background-color: #3C3F41;
+}
+
+#Blok2-container-code-bovenbar-files
+{
+    margin: 0 auto;
+    width: 40%;
+    height: 50%;
+}
+
+#Blok2-container-code-bovenbar-help
+{
+    width: 25%;
+    height: 50%;
+}
+
+#Blok2-container-code-bovenbar-help li
+{
+    width: 10%;
+    height: 100%;
+    float: left;
+    color: #D7D8D9;
+    margin-left: 1%;
+    text-align: center;
+}
+
+#Blok2-container-code-bovenbar-files p
+{
+    color: #D7D8D9;
+    width: 50%;
+    font-size: 13px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#Blok2-container-code-sidebar-boven
+{
+    width: 100%;
+    height: 36%;
+    background-color: #3C3F41;
+}
+
+#Blok2-container-code-sidebar-beneden
+{
+    width: 100%;
+    height: 70%;
+    background-color: #47484B;
+    border-top-width: 1px;
+    border-top-color: #505153;
+    border-top-style: solid;
+}
+
+#Blok2-container-code-sidebar-beneden h1
+{
+    width: 100%;
+    height: 7.5%;
+    font-size: 12px;
+    color: #D7D8D9;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#Blok2-container-code-sidebar-boven-portfolio
+{
+    width: 100%;
+    height: 100%;
+}
+
+#Blok2-container-code-sidebar-beneden h1#PortfolioFinal
+{
     
 }

@@ -26,7 +26,7 @@
     <script type="text/javascript" src="css/jquery-3.2.1.min.js"> </script>
     <script type="text/javascript" src="css/jquery.scrollify.js"> </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 
 <!-- count particles 
 <div class="count-particles">
@@ -121,11 +121,50 @@ hello.sayHi
     </div>
 </section>
     
-<section class="blok2" data-section-name="blok2">
-    <div id="blok2">
-        <div id="blok2-container">
-    
-    
+<section class="Blok2" data-section-name="blok2">
+    <div id="Blok2">
+        <div id="Blok2-container">
+            <div id="Blok2-container-code-bovenbar">
+                <div id="Blok2-container-code-bovenbar-files">
+                    <p> C:/Users/Tim/Desktop/Portfolio final/index.html</p>
+                </div>
+                
+                <div id="Blok2-container-code-bovenbar-help">
+                    <li> File </li>
+                    <li> Edit </li>
+                    <li> Find </li>
+                    <li> View </li>
+                    <li> Navigate </li>
+                    <li> Debug </li>
+                    <li> Help </li>
+                </div>
+            </div>
+            <div id="Blok2-container-code-sidebar">
+                <div id="Blok2-container-code-sidebar-boven">
+                    <div id="Blok2-container-code-sidebar-boven-portfolio">
+                    
+                    </div>
+                    
+                    <div id="Blok2-container-code-sidebar-boven-discordbot">
+                    
+                    </div>
+                    
+                    <div id="Blok2-container-code-sidebar-boven-java">
+                    
+                    </div>
+                </div>
+                
+                <!-- Hier een menu waar je projecten kan kiezen, zoals als je klikt op Portfolio Final krijg je de portfolio files in de bovenbar waar je files kan kiezen om te lezen.
+
+                Ook: Zorg dat als je scrolled naar de Blok1 dat dan pas de tekst verschijnt zodat de animation pas triggered als je het ziet.
+                -->
+                
+                <div id="Blok2-container-code-sidebar-beneden">
+                    <h1 id = "PortfolioFinal"> Portfolio Final </h1>
+                    <h1 id = "DiscordBot"> DiscordBot (Python) </h1>
+                    <h1 id = "Java"> Object georiënteerd (Java) </h1>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -176,6 +215,15 @@ hello.sayHi
     }
     });
 
+    </script>
+    
+    <script>
+    $("#Blok2-container-code-sidebar-beneden h1#PortfolioFinal").click(function()
+    {
+        $("#Blok2").hide();
+    });
+    
+    
     </script>
     
     <script>hljs.initHighlightingOnLoad();</script>
