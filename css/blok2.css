@@ -16,6 +16,7 @@
 {
     width: 10%;
     height: 90%;
+    float: left;
 }
 
 #Blok2-container-code-bovenbar
@@ -62,6 +63,7 @@
     width: 100%;
     height: 36%;
     background-color: #3C3F41;
+    float: left;
 }
 
 #Blok2-container-code-sidebar-beneden
@@ -72,6 +74,7 @@
     border-top-width: 1px;
     border-top-color: #505153;
     border-top-style: solid;
+    float: left;
 }
 
 #Blok2-container-code-sidebar-beneden h1
@@ -91,7 +94,54 @@
     height: 100%;
 }
 
+#Blok2-container-code-sidebar-boven-portfolio
+{
+    width: 100%;
+    height: 100%;
+}
+
 #Blok2-container-code-sidebar-beneden h1#PortfolioFinal
 {
     
+}
+
+#Blok2-container-code-sidebar-boven-portfolio h1#Indexhtml
+{
+    width: 100%;
+    height: 7.5%;
+    font-size: 12px;
+    color: #D7D8D9;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#Blok2-container-code-sidebar-boven-portfolio h1#Indexcss
+{
+    width: 100%;
+    height: 7.5%;
+    font-size: 12px;
+    color: #D7D8D9;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#Blok2-container-code-main
+{
+    width: 90%;
+    height: 95%;
+    float: left;
+}
+
+#Blok2-container-code-main-indexhtml
+{
+    width: 100%;
+    height: 100%;
+}
+
+#Blok2-container-code-main-indexcss
+{
+    width: 100%;
+    height: 100%;
 }

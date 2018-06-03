@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>particles.js</title>
-    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
-    <meta name="author" content="Vincent Garreau" />
+    <title>Tim's portfolio</title>
+    <meta name="description" content="De portfolio site van Tim van den Berg">
+    <meta name="author" content="Tim van den Berg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" media="screen" href="css/style.css">
     
@@ -142,7 +142,8 @@ hello.sayHi
             <div id="Blok2-container-code-sidebar">
                 <div id="Blok2-container-code-sidebar-boven">
                     <div id="Blok2-container-code-sidebar-boven-portfolio">
-                    
+                        <h1 id="Indexhtml"> index.html </h1>
+                        <h1 id="Indexcss"> index.css </h1>
                     </div>
                     
                     <div id="Blok2-container-code-sidebar-boven-discordbot">
@@ -163,6 +164,58 @@ hello.sayHi
                     <h1 id = "PortfolioFinal"> Portfolio Final </h1>
                     <h1 id = "DiscordBot"> DiscordBot (Python) </h1>
                     <h1 id = "Java"> Object georiënteerd (Java) </h1>
+                </div>
+            </div>
+            
+            
+            <div id="Blok2-container-code-main">
+                <div id="Blok2-container-code-main-indexhtml">
+                    <pre><code class="json">
+{
+    "Website": 
+    {
+        "name": "Portfoliosite",
+        "year": "2018",
+        "creator": 
+        {
+            "information": 
+            [
+                {
+                    "name": "Tim van den Berg",
+                    "age": "19",
+                    "year": "1999",
+                    "month": "april",
+                    "day": "21",
+                }
+            ]
+        }
+        "website":
+        {
+            "packages":
+            [
+                {
+                    "automaticscroll": "scrollify",
+                    "codehighlights": "highlight.cs",
+                    "particlebackground": "particles.js",
+                    "javascriptlibrary": "jquery",
+                }
+            ]
+        }
+    }
+}
+                    </code></pre>
+                </div>
+                
+                <div id="Blok2-container-code-main-indexcss">
+                    <pre><code class="css">
+/* Dit is de 3e versie van mijn portfolio site. 
+De eerste 3 versies waren immens lelijk, hopelijk vind je deze wel mooi :).
+*/
+
+/* 1 van de doelen in deze portfolio was dat ik zo veel mogelijk gebruik maakte van packages en plugins om de website zo anders mogelijk te maken. 
+Ik wou geen normale portfolio site maken. 
+*/
+                    </code></pre>
                 </div>
             </div>
         </div>
@@ -216,13 +269,46 @@ hello.sayHi
     });
 
     </script>
-    
     <script>
+        
+    //Als je klikt op Portfolio final dan hide het de andere elementen
     $("#Blok2-container-code-sidebar-beneden h1#PortfolioFinal").click(function()
     {
-        $("#Blok2").hide();
+        $("#Blok2-container-code-sidebar-boven-portfolio").fadeIn();
+        
+        $("#Blok2-container-code-sidebar-boven-discordbot").fadeOut();
+        $("#Blok2-container-code-sidebar-boven-java").fadeOut();
     });
-    
+        
+    //Als je klikt op Discordbot dan hide het de andere elementen
+    $("#Blok2-container-code-sidebar-beneden h1#DiscordBot").click(function()
+    {
+        $("#Blok2-container-code-sidebar-boven-discordbot").fadeIn();
+        
+        $("#Blok2-container-code-sidebar-boven-portfolio").fadeOut();
+        $("#Blok2-container-code-sidebar-boven-java").fadeOut();
+    });
+        
+    //Als je klikt op Java dan hide het de andere elementen
+    $("#Blok2-container-code-sidebar-beneden h1#Java").click(function()
+    {
+        $("#Blok2-container-code-sidebar-boven-java").fadeIn();
+        
+        $("#Blok2-container-code-sidebar-boven-portfolio").fadeOut();
+        $("#Blok2-container-code-sidebar-boven-discordbot").fadeOut();
+    });
+        
+    $("#Blok2-container-code-sidebar-boven-portfolio h1#Indexhtml").click(function()
+    {
+        $("#Blok2-container-code-main-indexhtml").fadeIn();
+        $("#Blok2-container-code-main-indexcss").fadeOut();
+    });
+        
+    $("#Blok2-container-code-sidebar-boven-portfolio h1#Indexcss").click(function()
+    {
+        $("#Blok2-container-code-main-indexhtml").fadeOut();
+        $("#Blok2-container-code-main-indexcss").fadeIn();
+    });
     
     </script>
     
