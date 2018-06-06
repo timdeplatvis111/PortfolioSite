@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/codeStyle.css" type="text/css">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/blok2.css">
+    <link rel="stylesheet" href="css/blok3.css">
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -57,10 +58,10 @@
         <div id="Blok1-container">
             <div id="Blok1-container-spacer1"> </div>
             <div id="css-typing-blok1">
-                <p> I'm mostly intrested in learning about web development</p>
+                <p> I'm learning to become a back-end web developer </p>
                 
 
-                <p> I am currently aiming to learn at least 2 web development languages. These will most likely be PHP and Django</p>
+                <p> I'm currently working on multiple projects, those are shown below </p>
                 
                 <div id="Blok1-container-spacer3"> </div>
                 
@@ -115,7 +116,7 @@ hello.sayHi
             </div>
             <div id="Blok1-container-spacer2"> </div>
             <div id="css-typing-blok2">
-                <p> the next page you'll be able to see some of my projects, of which most are in early development </p>
+                <p> On the next page you'll be able to see all my projects </p>
             </div>
         </div>
     </div>
@@ -147,7 +148,7 @@ hello.sayHi
                     </div>
                     
                     <div id="Blok2-container-code-sidebar-boven-discordbot">
-                    
+                        <h1 id="discordbot"> discordbot.py </h1>
                     </div>
                     
                     <div id="Blok2-container-code-sidebar-boven-java">
@@ -170,7 +171,7 @@ hello.sayHi
             
             <div id="Blok2-container-code-main">
                 <div id="Blok2-container-code-main-indexhtml">
-                    <pre><code class="json">
+                    <pre><code class="json json2">
 {
     "Website": 
     {
@@ -207,7 +208,7 @@ hello.sayHi
                 </div>
                 
                 <div id="Blok2-container-code-main-indexcss">
-                    <pre><code class="css">
+                    <pre><code class="css css2">
 /* Dit is de 3e versie van mijn portfolio site. 
 De eerste 3 versies waren immens lelijk, hopelijk vind je deze wel mooi :).
 */
@@ -217,7 +218,35 @@ Ik wou geen normale portfolio site maken.
 */
                     </code></pre>
                 </div>
+                
+                <div id="Blok2-container-code-main-discordbot">
+                    <pre><code class="python python2">
+import discord
+
+@bot.command()
+async def greet(ctx):
+    embed.add_field(name='Mijn Discordbot', value='In mijn vrije tijd thuis, of als ik op school niet druk bezig
+    was programmeerde ik een bot voor Discord met gebruik van Discord.py Rewrite. De bot is bedoeld om simpele
+    dingen te kunnen zoals willekeurige memes, of plaatjes, doorsturen en 
+    simpele teksten te sturen.')
+    
+    embed.add_field(name='Hoe krijg ik het?', value='De bot is nu nog niet verkrijgbaar omdat het nog niet
+    helemaal af is. Zodra ik vind dat de bot af genoeg is zal ik het plaatsen op Github. ')
+                    </code></pre>
+                </div>
             </div>
+        </div>
+    </div>
+</section>
+    
+<section class="Blok3" data-section-name="blok3">
+    <div id="Blok3">
+        <div id="Blok3-container">
+            <div id="Blok3-container-spacer1"> </div>
+            
+            <p> Some more information about me.. </p>
+            
+            <p> </p>
         </div>
     </div>
 </section>
@@ -230,8 +259,8 @@ Ik wou geen normale portfolio site maken.
     
     /* Fade in en fade uit van de begin tekst/loading screen */
     $('#splash').delay(2000).fadeOut(100);
-    $(".css-typing").delay(2000).fadeIn(500);
-    $(".css-typing2").delay(8000).fadeIn(500);
+    $(".css-typing").delay(2000).hide(500);
+    $(".css-typing2").delay(8000).hide(500);
         
     /* Scrollify functions */
     $(function() 
@@ -257,57 +286,77 @@ Ik wou geen normale portfolio site maken.
     afterRender:function() {}
     });
     });
-        
-    $(window).scroll(function() 
-    {
-    var height = $(window).scrollTop();
-
-    if(height > 650) 
-    {
-        $('#Blok1-container-images').fadeIn(800);
-    }
-    });
 
     </script>
     <script>
         
+    $(document).ready(function() 
+    {
+        $("#Blok2-container-code-main-indexhtml").fadeOut();
+        $("#Blok2-container-code-main-indexcss").fadeOut();
+        $("#Blok2-container-code-main-discordbot").fadeOut();
+        $("#css-typing-blok1").hide();
+        $("#css-typing-blok2").hide();
+    });
+        
     //Als je klikt op Portfolio final dan hide het de andere elementen
     $("#Blok2-container-code-sidebar-beneden h1#PortfolioFinal").click(function()
     {
-        $("#Blok2-container-code-sidebar-boven-portfolio").fadeIn();
+        $("#Blok2-container-code-sidebar-boven-portfolio").show();
         
-        $("#Blok2-container-code-sidebar-boven-discordbot").fadeOut();
-        $("#Blok2-container-code-sidebar-boven-java").fadeOut();
+        $("#Blok2-container-code-sidebar-boven-discordbot").hide();
+        $("#Blok2-container-code-sidebar-boven-java").hide();
     });
         
     //Als je klikt op Discordbot dan hide het de andere elementen
     $("#Blok2-container-code-sidebar-beneden h1#DiscordBot").click(function()
     {
-        $("#Blok2-container-code-sidebar-boven-discordbot").fadeIn();
+        $("#Blok2-container-code-sidebar-boven-discordbot").show();
         
-        $("#Blok2-container-code-sidebar-boven-portfolio").fadeOut();
-        $("#Blok2-container-code-sidebar-boven-java").fadeOut();
+        $("#Blok2-container-code-sidebar-boven-portfolio").hide();
+        $("#Blok2-container-code-sidebar-boven-java").hide();
     });
         
     //Als je klikt op Java dan hide het de andere elementen
     $("#Blok2-container-code-sidebar-beneden h1#Java").click(function()
     {
-        $("#Blok2-container-code-sidebar-boven-java").fadeIn();
+        $("#Blok2-container-code-sidebar-boven-java").show();
         
-        $("#Blok2-container-code-sidebar-boven-portfolio").fadeOut();
-        $("#Blok2-container-code-sidebar-boven-discordbot").fadeOut();
+        $("#Blok2-container-code-sidebar-boven-portfolio").hide();
+        $("#Blok2-container-code-sidebar-boven-discordbot").hide();
     });
         
     $("#Blok2-container-code-sidebar-boven-portfolio h1#Indexhtml").click(function()
     {
-        $("#Blok2-container-code-main-indexhtml").fadeIn();
-        $("#Blok2-container-code-main-indexcss").fadeOut();
+        $("#Blok2-container-code-main-indexcss").hide();
+        $("#Blok2-container-code-main-indexhtml").show();
+        $("#Blok2-container-code-main-discordbot").hide();
     });
         
     $("#Blok2-container-code-sidebar-boven-portfolio h1#Indexcss").click(function()
     {
-        $("#Blok2-container-code-main-indexhtml").fadeOut();
-        $("#Blok2-container-code-main-indexcss").fadeIn();
+        $("#Blok2-container-code-main-indexhtml").hide();
+        $("#Blok2-container-code-main-indexcss").show();
+        $("#Blok2-container-code-main-discordbot").hide();
+    });
+        
+    $("#Blok2-container-code-sidebar-boven-discordbot h1#discordbot").click(function()
+    {
+        $("#Blok2-container-code-main-discordbot").show();
+        
+        $("#Blok2-container-code-main-indexhtml").hide();
+        $("#Blok2-container-code-main-indexcss").hide();
+    });
+        
+    $(window).scroll(function() 
+    {
+    var height = $(window).scrollTop();
+
+    if(height  > 600) 
+    {
+        $("#css-typing-blok1").show();
+        $("#css-typing-blok2").show();
+    }
     });
     
     </script>

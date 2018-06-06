@@ -49,6 +49,8 @@
     font-weight: 500;
     color: #2B6AEA;
     margin-top: 2.5%;
+    white-space: nowrap; 
+    overflow: hidden;
 }
 
 #css-typing-blok2
@@ -66,6 +68,8 @@
     color: #2B6AEA;
     margin-top: 2.5%;
     margin: 0 auto;
+    white-space: nowrap; 
+    overflow: hidden;
 }
 
 #css-typing-blok1 p:nth-child(1) 
@@ -79,8 +83,8 @@
 
 #css-typing-blok2 p:nth-child(1) 
 {
-    width: 25em;
-    -webkit-animation: type 2s steps(40, end);
+    width: 33em;
+    -webkit-animation: type 2s steps(20, end);
     animation: type 2s steps(100, end);
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
@@ -88,7 +92,7 @@
 
 #css-typing-blok1 p:nth-child(2) 
 {
-    width: 52em;
+    width: 39em;
     -webkit-animation: type 2s steps(40, end);
     animation: type 2s steps(100, end);
     -webkit-animation-fill-mode: forwards;
