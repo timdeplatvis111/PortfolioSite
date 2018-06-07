@@ -37,9 +37,9 @@
 <!-- particles.js container -->
 <section class="particles-js" data-section-name="particles-js">
     <div id="particles-js">
-        <div id="splash"><img src="images/LoadingLogo.svg" /></div>
+        <!-- <div id="splash"><img src="images/LoadingLogo.svg" /></div> -->
     
-        <div style="display: none;" class="css-typing">
+        <div class="css-typing-particles">
             <p class=hvr-grow> Hello I'm Tim</p>
         
             <p class="hvr-shrink"> I'm a student</p>
@@ -47,7 +47,7 @@
             <p class="hvr-skew"> I'm currently studying software development at Nova college in Haarlem</p>
         </div>
     
-        <div style="display: none;" class="css-typing2">
+        <div class="css-typing2-particles">
             <p> Please scroll down to proceed </p>
         </div>
     </div>
@@ -131,13 +131,16 @@ hello.sayHi
                 </div>
                 
                 <div id="Blok2-container-code-bovenbar-help">
-                    <li> File </li>
-                    <li> Edit </li>
-                    <li> Find </li>
-                    <li> View </li>
-                    <li> Navigate </li>
-                    <li> Debug </li>
-                    <li> Help </li>
+                    <ul>
+                        <li id="File"> File </li>
+                            <div id="dropbown-content"></div>
+                        <li id="Edit"> Edit </li>
+                        <li id="Find"> Find </li>
+                        <li id="View"> View </li>
+                        <li id="Navigate"> Navigate </li>
+                        <li id="Debug"> Debug </li>
+                        <li id="Help"> Help </li>
+                    </ul>
                 </div>
             </div>
             <div id="Blok2-container-code-sidebar">
@@ -244,9 +247,23 @@ async def greet(ctx):
         <div id="Blok3-container">
             <div id="Blok3-container-spacer1"> </div>
             
-            <p> Some more information about me.. </p>
+            <h1> Some more information about me.. </h1>
             
-            <p> </p>
+            <h1> My work experience: </h1>
+            <p> 2016 - present day </p>
+            <a href="https://www.ah.nl/"> <p> Albert Heijn </p> </a>
+            
+            <div id="Blok3-container-spacer1"> </div>
+            
+            <h1> Intrests: </h1>
+            <p> Back end web development</p>
+            
+            <div id="Blok3-container-spacer1"> </div>
+            
+            <h1> Languages I like: </h1>
+            <a href="https://rubyonrails.org/"> <p> Ruby using the Ruby on Rails framework </p> </a>
+            <a href="https://www.djangoproject.com/"><p> Python using Django </p> </a>
+            <a href="https://nodejs.org/en/"> <p> Java for NodeJS </p> </a>
         </div>
     </div>
 </section>
@@ -292,9 +309,9 @@ async def greet(ctx):
         
     $(document).ready(function() 
     {
-        $("#Blok2-container-code-main-indexhtml").fadeOut();
-        $("#Blok2-container-code-main-indexcss").fadeOut();
-        $("#Blok2-container-code-main-discordbot").fadeOut();
+        $("#Blok2-container-code-main-indexhtml").hide();
+        $("#Blok2-container-code-main-indexcss").hide();
+        $("#Blok2-container-code-main-discordbot").hide();
         $("#css-typing-blok1").hide();
         $("#css-typing-blok2").hide();
     });
@@ -352,7 +369,7 @@ async def greet(ctx):
     {
     var height = $(window).scrollTop();
 
-    if(height  > 600) 
+    if(height  > 920) 
     {
         $("#css-typing-blok1").show();
         $("#css-typing-blok2").show();

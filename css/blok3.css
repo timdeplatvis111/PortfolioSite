@@ -18,11 +18,25 @@
     height: 5%;
 }
 
-#Blok3-container p
+#Blok3-container h1
 {
     font-family: "Courier";
     font-size: 28px;
     font-weight: 500;
     color: #2B6AEA;
     margin-top: 2.5%;
+}
+
+#Blok3-container p
+{
+    font-family: "Courier";
+    font-size: 23px;
+    font-weight: 500;
+    color: #2B6AEA;
+    margin-top: 1%;
+}
+
+#Blok3-container p:hover
+{
+    color: #5587EE;
 }

@@ -88,6 +88,11 @@
     align-items: center; 
 }
 
+#Blok2-container-code-sidebar-beneden h1:hover
+{
+    cursor: pointer;
+}
+
 #Blok2-container-code-sidebar-boven-portfolio
 {
     width: 100%;
@@ -133,6 +138,11 @@
     align-items: center; 
 }
 
+#Blok2-container-code-sidebar-boven h1:hover
+{
+    cursor: pointer;
+}
+
 #Blok2-container-code-main
 {
     width: 90%;
@@ -164,3 +174,16 @@
     height: 100%;
 }
 
+#dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+}
+
+Blok2-container-code-bovenbar-help:nth-child(1) 
+{
+    
+}
