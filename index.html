@@ -6,8 +6,8 @@
     <meta name="description" content="De portfolio site van Tim van den Berg">
     <meta name="author" content="Tim van den Berg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" media="screen" href="css/style.css">
     
+    <link rel="stylesheet" media="screen" href="css/style.css">
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <link rel="stylesheet" href="css/header.css" type="text/css">
     <link rel="stylesheet" href="css/hey.css" type="text/css">
@@ -18,17 +18,17 @@
     <link rel="stylesheet" href="css/blok2.css">
     <link rel="stylesheet" href="css/blok3.css">
     <link rel="stylesheet" href="css/blok4.css">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
     
-<body onload="splash(50000)">
+<body>
     
     <!-- package scrips -->
     <script type="text/javascript" src="css/jquery-3.2.1.min.js"> </script>
     <script type="text/javascript" src="css/jquery.scrollify.js"> </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="css/jquery.waypoints.js"> </script>
 
 <!-- count particles 
 <div class="count-particles">
@@ -43,11 +43,11 @@ Nog een button toevoegen met: "Ik ben hier alleen voor je CV", die dan redirect 
         <!-- <div id="splash"><img src="images/LoadingLogo.svg" /></div> -->
     
         <div class="css-typing-particles">
-            <p class=hvr-grow> Hello I'm Tim</p>
+            <p class=hvr-grow> 1234567891234</p>
         
-            <p class="hvr-shrink"> I'm a student</p>
-        
-            <p class="hvr-skew"> I'm currently studying software development at Nova college in Haarlem</p>
+            <p class="hvr-shrink"> 123 4 5678912</p>
+                                                                                                       |
+            <p class="hvr-skew"> Testtesttesttesttesttesttesttesttesttestestestestestestestestestesteste </p>
         </div>
     
         <div class="css-typing2-particles">
@@ -136,12 +136,62 @@ hello.sayHi
                 <div id="Blok2-container-code-bovenbar-help">
                     <ul>
                         <li id="File"> File </li>
-                            <div id="dropbown-content"></div>
+                            <div id="dropdown-content">
+                                <ul>
+                                    <li> Hello </li>
+                                    <li> There </li>
+                                    <li> General </li>
+                                    <li> Kenobi </li>
+                                </ul>
+                            </div>
                         <li id="Edit"> Edit </li>
+                            <div id="dropdown-content2">
+                                <ul>
+                                    <li> I bet </li>
+                                    <li> You </li>
+                                    <li> Kiss </li>
+                                    <li> Girls </li>
+                                    <li> Faggot </li>
+                                </ul>
+                            </div>
                         <li id="Find"> Find </li>
+                            <div id="dropdown-content3">
+                                <ul>
+                                    <li> Anime </li>
+                                    <li> Was </li>
+                                    <li> A </li>
+                                    <li> Mistake </li>
+                                    <li> - Miyazaki </li>
+                                </ul>
+                            </div>
                         <li id="View"> View </li>
+                            <div id="dropdown-content4">
+                                <ul>
+                                    <li> Hammetje </li>
+                                    <li> Best </li>
+                                    <li> Waifu </li>
+                                </ul>
+                            </div>
                         <li id="Navigate"> Navigate </li>
+                            <div id="dropdown-content5">
+                                <ul>
+                                    <li> I </li>
+                                    <li> Love </li>
+                                    <li> Refrigirators </li>
+                                </ul>
+                            </div>
                         <li id="Debug"> Debug </li>
+                            <div id="dropdown-content6">
+                                <ul>
+                                    <li> I </li>
+                                    <li> Am </li>
+                                    <li> The senate </li>
+                                    <li> Not yet </li>
+                                    <li> ... </li>
+                                    <li> Its </li>
+                                    <li> Treason </li>
+                                    <li> Then </li>
+                                </ul>
                         <li id="Help"> Help </li>
                     </ul>
                 </div>
@@ -282,7 +332,7 @@ async def greet(ctx):
     <div id="Blok4">
         <div id="Blok4-container">
             <div id="Blok4-container-spacer1"> </div>
-            <h1> Got any questions? </h1>
+            <h1> Intrested? </h1>
             
             <div id="Blok4-container-spacer1"> </div>
             <h2> Feel free to ask me anything at: </h2>
@@ -292,7 +342,6 @@ async def greet(ctx):
             
             <div id="Blok4-container-spacer1"> </div>
             <h2> 0628894530 <h2>
-            <h2>  </h2>
         </div>
     </div>
 </section>
@@ -300,6 +349,46 @@ async def greet(ctx):
 <!-- scripts -->
 <script src="css/particles.js-master/particles.js"></script>
 <script src="js/app.js"></script>
+<script src="css/jquery.waypoints.js"></script>
+        
+    <script>
+        
+    //Om de tekst achter elkaar in te laden faden van Blok4
+        
+    $('#Blok4-container').waypoint(function(down) 
+    {
+        $("#Blok4-container h1" ).addClass("show");
+    }, {offset: 100});
+        
+    $('#Blok4-container').waypoint(function(up) 
+    {
+        $("#Blok4-container h1" ).addClass("show");
+    }, {offset: -100});
+        
+    // Om te zorgen dat het ook weer uit fade als je naarboven scrolled
+    $('#Blok3').waypoint(function(down) 
+    {
+        $("#Blok4-container h1" ).removeClass("show");
+    }, {offset: 100});
+        
+    $('#Blok3').waypoint(function(up) 
+    {
+        $("#Blok4-container h1" ).removeClass("show");
+    }, {offset: -100});
+        
+    // Voor Blok1
+        
+    $('#Blok1-container').waypoint(function(down) 
+    {
+        $("#css-typing-blok1 p").addClass("show");
+    }, {offset: 100});
+        
+    $('#Blok1-container').waypoint(function(up) 
+    {
+        $("#css-typing-blok1 p").addClass("show");
+    }, {offset: -100});
+
+    </script>
 
     <script>
     
@@ -341,8 +430,6 @@ async def greet(ctx):
         $("#Blok2-container-code-main-indexhtml").hide();
         $("#Blok2-container-code-main-indexcss").hide();
         $("#Blok2-container-code-main-discordbot").hide();
-        $("#css-typing-blok1").hide();
-        $("#css-typing-blok2").hide();
     });
         
     //Als je klikt op Portfolio final dan hide het de andere elementen
@@ -394,15 +481,46 @@ async def greet(ctx):
         $("#Blok2-container-code-main-indexcss").hide();
     });
         
-    $(window).scroll(function() 
+    $(function() 
     {
-    var height = $(window).scrollTop();
-
-    if(height  > 920) 
+    $('#dropdown-content').hide();
+    $('#Blok2-container-code-bovenbar-help #File').hover( function() 
+    { $('#dropdown-content').toggle(); } );
+    });
+        
+    $(function() 
     {
-        $("#css-typing-blok1").show();
-        $("#css-typing-blok2").show();
-    }
+    $('#dropdown-content2').hide();
+    $('#Blok2-container-code-bovenbar-help #Edit').hover( function() 
+    { $('#dropdown-content2').toggle(); } );
+    });
+        
+    $(function() 
+    {
+    $('#dropdown-content3').hide();
+    $('#Blok2-container-code-bovenbar-help #Find').hover( function() 
+    { $('#dropdown-content3').toggle(); } );
+    });
+        
+    $(function() 
+    {
+    $('#dropdown-content4').hide();
+    $('#Blok2-container-code-bovenbar-help #View').hover( function() 
+    { $('#dropdown-content4').toggle(); } );
+    });
+        
+    $(function() 
+    {
+    $('#dropdown-content5').hide();
+    $('#Blok2-container-code-bovenbar-help #Navigate').hover( function() 
+    { $('#dropdown-content5').toggle(); } );
+    });
+        
+    $(function() 
+    {
+    $('#dropdown-content6').hide();
+    $('#Blok2-container-code-bovenbar-help #Debug').hover( function() 
+    { $('#dropdown-content6').toggle(); } );
     });
     
     </script>

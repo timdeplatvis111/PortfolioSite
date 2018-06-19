@@ -2,7 +2,7 @@
 {
     width: 100%;
     height: 100vh;
-    background-image: url(../images/trianglify2.svg);
+    background-image: url(../images/trianglify3.svg);
 }
 
 #Blok4-container
@@ -27,14 +27,18 @@
 #Blok4-container h1
 {
     font-family: "Courier";
-    font-size: 32px;
+    font-size: 54px;
     font-weight: 500;
     color: #2B6AEA;
     width: 30%;
     margin: 0 auto;
-    border-bottom-style: solid;
-    border-bottom-width: 3px;
-    border-bottom-color: inherit;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.show
+{
+    opacity: 1 !important;
 }
 
 #Blok4-container h2

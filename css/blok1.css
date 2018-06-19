@@ -51,6 +51,7 @@
     margin-top: 2.5%;
     white-space: nowrap; 
     overflow: hidden;
+    opacity: 0;
 }
 
 #css-typing-blok2
@@ -127,4 +128,9 @@
 {
     width: 30%;
     float: left;
+}
+
+.show
+{
+    opacity: 1;
 }

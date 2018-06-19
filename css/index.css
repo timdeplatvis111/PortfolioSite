@@ -13,6 +13,11 @@ html,body
     max-width: 100%;
 }
 
+::-webkit-scrollbar 
+{ 
+    display: none; 
+}
+
 #splash img
 {
     width: 100%;
