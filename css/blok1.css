@@ -73,7 +73,7 @@
     overflow: hidden;
 }
 
-#css-typing-blok1 p:nth-child(1) 
+#css-typing-blok1 p:nth-child(1).animate
 {
     width: 34em;
     -webkit-animation: type 2s steps(40, end);
@@ -82,19 +82,19 @@
     animation-fill-mode: forwards;
 }
 
-#css-typing-blok2 p:nth-child(1) 
+#css-typing-blok1 p:nth-child(2).animate
 {
-    width: 33em;
-    -webkit-animation: type 2s steps(20, end);
+    width: 39em;
+    -webkit-animation: type 2s steps(40, end);
     animation: type 2s steps(100, end);
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
-#css-typing-blok1 p:nth-child(2) 
+#css-typing-blok2 p:nth-child(1).animate
 {
-    width: 39em;
-    -webkit-animation: type 2s steps(40, end);
+    width: 33em;
+    -webkit-animation: type 2s steps(20, end);
     animation: type 2s steps(100, end);
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
